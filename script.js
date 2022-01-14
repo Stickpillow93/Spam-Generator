@@ -6,6 +6,8 @@ function bruh() {
     alert("the number of lines can't be zero");
   } else if (textId == "") {
     alert("You can not copy blank message.");
+  } else if (numId > 300) {
+    alert("You can only generate 300 lines of spam");
   } else {
     let out = "";
     let num = numId;
@@ -14,7 +16,7 @@ function bruh() {
     }
     console.log(text);
     navigator.clipboard.writeText(out);
-    alert("Succesfully generated spam");
+    alert("Succesfully copied the text");
     console.log(textId);
   }
 }
