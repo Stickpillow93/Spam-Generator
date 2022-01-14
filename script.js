@@ -16,7 +16,7 @@ function bruh() {
     }
     console.log(text);
     navigator.clipboard.writeText(out);
-    alert("Succesfully copied the text");
+    alert("Succesfully generated spam");
     console.log(textId);
   }
 }
